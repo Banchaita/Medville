@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dermaclin</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/Dermaclin/test.css">
+    <link rel="stylesheet" href="https://www.calee.in/assets/frontend/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/Dermaclin/dermaclin.css">
+    <link rel="stylesheet" id="google_fonts" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"media="all" />
+    <link rel="stylesheet" href="/css/Dermaclin/icon.css" />
+    <link rel="stylesheet" href="/css/Dermaclin/stl-by-mud.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125029716-1"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://www.calee.in/assets/frontend/js/jquery.bxslider.min.js"></script>
+    <link href="https://www.calee.in/assets/frontend/css/jquery.bxslider.css" rel="stylesheet" />
+    <script async src="https://www.calee.in/assets/frontend/js/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125029716-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-826159800"></script>
+    <script async src="https://www.calee.in/assets/frontend/js/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125029716-1"></script>
+
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-125029716-1');
+    </script> -->
+
+    <!-- <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5c08bd4ffd65052a5c93fe6b/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script> -->
+
+
+    <!-- <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2073300329630397');
+        fbq('track', 'PageView');
+    </script> -->
+    <!-- <noscript>
+        <img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=466534657202437&ev=PageView&noscript=1" />
+    </noscript> -->
+
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-826159800');
+    </script> -->
+
+    <!-- <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-826159800/iOiHCKSryY8BELjl-IkD' });
+    </script> -->
+</head>
+
+<body>
+    <!-- Start of Appointment -->
+    <section class="book-appt">
+        <div class="g-container">
+            <div class="g-row">
+                <div class="appt-box-img">
+                    <div class="appt-box">
+                        <div class="close-btn" id="close_btn_book"></div>
+                        <div class="frm-heading">
+                            <p><span>Great Things </span>don&#39;t happen by chance&#44; They happen by
+                                <span>Appointment</span>
+                            </p>
+                        </div>
+                        <form method="post" id="enquiry_form" class="frm-cont">
+                            <div class="g-input-box g-input-box-t-1">
+                                <div class="g-input-box-inner">
+                                    <input type="text" class="text-box" required name="name" id="txt_name">
+                                    <div class="g-label">Name</div>
+                                    <div class="g-u-line"></div>
+                                    <div class="g-u-active"></div>
+                                </div>
+                                <div class="g-error"></div>
+                            </div>
+                            <div class="g-input-box g-input-box-t-1">
+                                <div class="g-input-box-inner">
+                                    <input type="email" class="text-box" name="email" id="txt_email" required>
+                                    <div class="g-label">Email</div>
+                                    <div class="g-u-line"></div>
+                                    <div class="g-u-active"></div>
+                                </div>
+                                <div class="g-error"></div>
+                            </div>
+                            <div class="g-input-box g-input-box-t-1">
+                                <div class="g-input-box-inner">
+                                    <input type="tel" class="text-box" name="number" id="txt_number" required>
+                                    <div class="g-label">Mobile No&#46;</div>
+                                    <div class="g-u-line"></div>
+                                    <div class="g-u-active"></div>
+                                </div>
+                                <div class="g-error"></div>
+                            </div>
+                            <div class="g-input-box g-input-box-t-1">
+                                <div class="g-input-box-inner">
+                                    <textarea class="text-box" name="service" id="txt_query" rows="4" cols="80"
+                                        placeholder="Concern" style="margin:0;"></textarea>
+                                    <div class="g-label txt-ar-lb">Concern</div>
+                                    <div class="g-u-active txt-ar-lb"></div>
+                                </div>
+                                <div class="g-error"></div>
+                            </div>
+                            <div class="banner-action-area">
+                                <a class="g-action-btn g-wth-bg an-btn-2" id="submit_enquiry_form"
+                                    href="javascript:void(0);">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="g-action-btn g-wth-bg bok-a-apt book-pop-up-ri-bot" type="button" name="button">Book an
+        Appointment
+    </button>
+    <!-- End of Appointment -->
+
+     <!-- Start of Header -->
+     <header class="g-pos-fixed">
+        <div class="top-header">
+            <div class="g-container">
+                <div class="g-row">
+                    <div class="g-flex-col">
+                        <ul class="g-ul top-contact ul-typ-n">
+                            <li class="g-li">
+                                <a href="tel:9465587840" class="g-anchor">
+                                    <i class="fas fa-phone"></i>
+                                    &#43;9465587840
+                                </a>
+                            </li>
+                            <li class="g-li">
+                                <a href="mailto:connect@calee.in" class="g-anchor">
+                                    <i class="fas fa-envelope"></i> Dermaclin125&#64;gmail&#46;com
+                                </a>
+                            </li>      
+                        </ul>
+                    </div>
+                    <div class="g-flex-col">
+                        <a href="/Dermaclin/dermaclin.html" class="site-logo">
+                            <img src="../assests/images/derma.jpg" alt="derma Logo"/>
+                        </a>
+                    </div>
+                    <div class="g-flex-col">
+                        <ul class="g-ul top-social ul-typ-n">
+                            <li class="g-li">
+                                <a href="https://www.facebook.com/cliniccalee/" target="_blank" class="g-anchor">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="g-li">
+                                <a href="https://twitter.com/cliniccalee" target="_blank" class="g-anchor">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="g-li">
+                                <a href="https://in.pinterest.com/cliniccalee/" target="_blank" class="g-anchor">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="g-li">
+                                <a href="https://www.instagram.com/cliniccalee/" target="_blank" class="g-anchor">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-btn">
+                        <div class="nav-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="allover">
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="parent-menu"><a href="/Dermaclin/about.html">About Us</a></li>
+                        <li class="dropdown parent-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Concern<span
+                                    class="caret-arrow"></span><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="navbar-submenu" style="width: 704px;">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="/Dermaclin/acne.html">Acne</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/acne-scars/2">Acne
+                                                            Scars</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/dark-circles/3">Dark
+                                                            Circles</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/sunken-eyes/4">Sunken
+                                                            Eyes</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/saggy-puffy-eyes/5">Saggy
+                                                            & Puffy Eyes</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/dilated-pores/6">Dilated
+                                                            Pores</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/stretch-marks/7">Stretch
+                                                            Marks</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/cellulite-loose-skin/8">Cellulite
+                                                            & Loose Skin</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/double-chin/9">Double
+                                                            Chin</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/sagging-ageing/10">Sagging
+                                                            & Ageing</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/fine-line-wrinkles/11">Fine
+                                                            Line & Wrinkles</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a
+                                                            href="https://www.calee.in/concern/pigmentation/12">Pigmentation</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a
+                                                            href="https://www.calee.in/concern/tanning-uneven-skin-tone/13">Tanning
+                                                            & Uneven Skin Tone</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/melasma/14">Melasma</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/alopecia/15">Alopecia</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/marks-age-spots/16">Marks
+                                                            & Age Spots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/freckles/17">Freckles</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/warts-skin-tags/18">Warts
+                                                            & Skin Tags</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/rosacea/19">Rosacea</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/excessive-body-hair/20">Excessive
+                                                            Body Hair</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/facial-hair/21">Facial
+                                                            Hair</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/dull-skin/22">Dull
+                                                            Skin</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/glow-maintenance/23">Glow
+                                                            & Maintenance</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/thin-dark-lips/24">Thin &
+                                                            Dark Lips</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/hair-loss/25">Hair
+                                                            Loss</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/sweat-control/26">Sweat
+                                                            Control</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/tattoo-removal/27">Tattoo
+                                                            Removal</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/lip-augmuntation/28">Lip
+                                                            Augmuntation</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/brow-cheeks-chin/29">Brow,
+                                                            Cheeks, Chin</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/concern/facial-remodelling/30">Facial
+                                                            Remodelling</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown parent-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aesthetic Dermatology<span
+                                    class="caret-arrow"></span><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="navbar-submenu" style="width:450px;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 boxes" style="padding-top:15px;">
+                                                <a class="parent"><span>Skin Treatments</span></a>
+                                                <ul class="navbar-submenu-list"
+                                                    style="padding-left:0px;padding-top:10px;">
+                                                    <li><a href="https://www.calee.in/service/hifu/6">HIFU</a></li>
+                                                    <li><a href="https://www.calee.in/service/dermal-fillers/7">Dermal
+                                                            Fillers</a></li>
+                                                    <li><a href="https://www.calee.in/service/calee-agerev/9">Calee
+                                                            AgeRev</a></li>
+                                                    <li><a href="https://www.calee.in/service/qswitch/10">Qswitch</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://www.calee.in/service/platelet-rich-plasma-prp-/11">Platelet
+                                                            Rich Plasma (PRP)</a></li>
+                                                    <li><a href="https://www.calee.in/service/chemical-peels/12">Chemical
+                                                            Peels</a></li>
+                                                    <li><a
+                                                            href="https://www.calee.in/service/mesotherapy/13">Mesotherapy</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://www.calee.in/service/diamond-microdermabrasion/14">Diamond
+                                                            Microdermabrasion</a></li>
+                                                    <li><a href="https://www.calee.in/service/synergy-plus/15">Synergy
+                                                            Plus</a></li>
+                                                    <li><a href="https://www.calee.in/service/derma-roller/16">Derma
+                                                            Roller</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 boxes" style="padding-top:15px;">
+                                                <a class="parent"><span>Laser Hair Removal</span></a>
+                                                <ul class="navbar-submenu-list"
+                                                    style="padding-left:0px;padding-top:10px;">
+                                                    <li><a href="https://www.calee.in/service/laser-hair-reduction/17">Laser
+                                                            Hair Reduction</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 boxes" style="padding-top:15px;">
+                                                <a class="parent"><span>Hair Restoration</span></a>
+                                                <ul class="navbar-submenu-list"
+                                                    style="padding-left:0px;padding-top:10px;">
+                                                    <li><a href="https://www.calee.in/service/platelet-rich-plasma/19">Platelet
+                                                            Rich Plasma</a></li>
+                                                    <li><a
+                                                            href="https://www.calee.in/service/mesotherapy/20">Mesotherapy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 boxes" style="padding-top:15px;">
+                                                <a class="parent"><span>Facials</span></a>
+                                                <ul class="navbar-submenu-list"
+                                                    style="padding-left:0px;padding-top:10px;">
+                                                    <li><a
+                                                            href="https://www.calee.in/service/calee-skin-maintenance-program/22">Calee
+                                                            Skin Maintenance Program</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown parent-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Weight Loss<span
+                                    class="caret-arrow"></span><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="navbar-submenu" style="width:200px;">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a
+                                                            href="https://www.calee.in/service/cryolypolisis-cavitation/24">Cryolypolisis
+                                                            & Cavitation</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/service/anti-obesity-platform/25">Anti
+                                                            Obesity Platform</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/service/hifu-body/26">HIFU
+                                                            BODY</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/service/body-mesotherapy/30">Body
+                                                            Mesotherapy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/service/fatx/31">FatX</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/service/fir-detox-/32">FIR Detox
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown parent-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media<span
+                                    class="caret-arrow"></span><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="navbar-submenu" style="width:100px;">
+                                        <div class="row">
+                                            <div class="col-lg-12 " style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/media/print">Print</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 " style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/media/press-release">Press
+                                                            Release</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12 " style="padding-left: 0px;">
+                                                <ul class="navbar-submenu-list"
+                                                    style="background-color: transparent !important;padding-left:0px;">
+                                                    <li><a href="https://www.calee.in/media/video">Video</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="parent-menu"><a href="https://www.calee.in/blog">Blog</a></li>
+
+                        <li class="parent-menu" style="border-bottom: 0px solid gray;"><a
+                                href="https://www.calee.in/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Header -->
+
+
+
+
+    <div class="container-fluid c-pad-top">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 service-main-banner">
+                <img src="/assests/images/acne.jpg" class="desktop-image" />
+                <img src="/assests/images/acne-mobile.jpg" class="mobile-image" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid service-content">
+        <div class="allover">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12 service-content-text concern-page">
+
+                    <div class="concern-image concerimage-desktop">
+                        <img src="/assests/images/acne-formation.jpg" />
+                    </div>
+                    <p>
+                    <div>Acne is a common &amp; frustrating skin ailment that disrupts your overall look. That's why its
+                        onset can be extremely stressful to many. Acne is developed when the oil from your skin, instead
+                        of being eliminated from your body, gets clogged in the roots of your hair follicles along with
+                        the dead skin.</div>
+                    <div>Surprisingly, acne can be noticed not just on your face but also on the chest, back, upper arms
+                        &amp; bottom.</div>
+                    <div>Four out five men &amp; women experience this problem during some stage of their life. It was
+                        previously seen mostly in teenagers but today, Acne is a problem that is quite rampant in
+                        adult-life as well as due to environmental factors, poor nutrition, stress &amp; hormonal
+                        imbalance. In women, a condition called Hyperandrogenism can release higher than usual
+                        testosterone in the bloodstream. As a woman's body is not always well-equipped to deal with this
+                        surge of hormones, acne is just one of the many symptoms that show up.</div>
+                    </p>
+                    <div class="concern-image concerimage-mobile" style="display:none;">
+                        <img src="/assests/images/acne-formation.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid services" style="background-color:#E7E9E7;">
+        <div class="allover">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <div class="bookapp" style="padding-top:0px !important;">
+                    </div>
+                    <h1>TREATMENT FOR ACNE </h1>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-1 col-xs-12 col-md-1"></div>
+                            <div class="col-lg-10 col-xs-12 col-md-10 col-lg-offset-1">
+                                <div class="col-xs-12 col-lg-3 col-md-3    service-list service-list-div">
+                                    <a href="https://www.calee.in/service/chemical-peels/12">
+                                        <div class="tester">
+                                            <div class="block img-responsive" style="position:relative;height:285px;">
+                                                <img alt="Chemical Peels"
+                                                    src="https://www.calee.in/resources/service/3ghcat5zqt.jpg" />
+                                                <h3>CHEMICAL PEELS</h3>
+                                                <a href="/assests/images/acne1.jpg"class="know-more" style="position:absolute;bottom:8px;right: 0;">
+                                                    KNOW MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-lg-3 col-md-3    service-list service-list-div">
+                                    <a href="https://www.calee.in/service/synergy-plus/15">
+                                        <div class="tester">
+                                            <div class="block img-responsive" style="position:relative;height:285px;">
+                                                <img alt="SYNERGY PLUS"
+                                                    src="https://www.calee.in/resources/service/wj9j0ppmvk.jpg" />
+                                                <h3>SYNERGY PLUS</h3>
+                                                <a href="/assests/images/acne2.jpg"class="know-more" style="position:absolute;bottom:8px;right: 0;">
+                                                    KNOW MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-lg-3 col-md-3    service-list service-list-div">
+                                    <a href="https://www.calee.in/service/calee-skin-maintenance-program/22">
+                                        <div class="tester">
+                                            <div class="block img-responsive" style="position:relative;height:285px;">
+                                                <img alt="Calee Skin Maintenance Program"
+                                                    src="/assests/images/acne3.jpg" />
+                                                <h3>CALEE SKIN MAINTENANCE PROGRAM</h3>
+                                                <a href="https://www.calee.in/service/calee-skin-maintenance-program/22"class="know-more"style="position:absolute;bottom:8px;right: 0;">
+                                                    KNOW MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="allover">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-sm-4 col-lg-4 foot-left">
+                        <div class="foot-div" style="margin-top:20px;">
+                            <img src="/assests/images/derma.jpg" alt="dermaclin logo" style="width:100%;" /> 
+                            <p class="mobile-hidden">&nbsp;</p>
+                            <span> HM 125, Ph-3B1 Mohali (Punjab)</span>
+                            <span>Call: +91 9465587840</span>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-sm-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-sm-3 col-md-3 col-lg-3 foot-links-ul foot-links-ul-border">
+                                <ul>
+                                    <li><a href="https://www.calee.in/concern/acne/1">Acne</a></li>
+                                    <li><a href="https://www.calee.in/concern/acne-scars/2">Acne scars</a></li>
+                                    <li><a href="https://www.calee.in/concern/pigmentation/12">Pigmentation</a></li>
+                                    <li><a href="https://www.calee.in/concern/fine-line-wrinkles/11"> Fine lines &
+                                            wrinkles</a></li>
+                                    <li><a href="https://www.calee.in/concern/sagging-ageing/10">Sagging & ageing</a>
+                                    </li>
+                                    <li><a href="https://www.calee.in/concern/facial-remodelling/30">Facial
+                                            Remodelling</a></li>
+                                    <li><a href="https://www.calee.in/concern/hair-loss/25">Hair loss</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 col-lg-3 foot-links-ul foot-links-ul-border">
+                                <ul>
+                                    <li><a href="https://www.calee.in/concern/excessive-body-hair/20">Excessive body
+                                            hair</a></li>
+                                    <li><a href="https://www.calee.in/concern/lip-augmuntation/28">Lip augmentation</a>
+                                    </li>
+                                    <li><a href="https://www.calee.in/concern/sweat-control/26">Sweat control</a></li>
+                                    <li><a href="https://www.calee.in/cosmetic-surgery/rhinoplasty">Rhinoplasty</a></li>
+                                    <li><a
+                                            href="https://www.calee.in/cosmetic-surgery/blepharoplasty">Blepharoplasty</a>
+                                    </li>
+                                    <li><a href="https://www.calee.in/cosmetic-surgery/liposuction">Liposuction</a></li>
+                                    <li><a href="https://www.calee.in/cosmetic-surgery/breast-surgery">Breast
+                                            Surgery</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 col-lg-3 foot-links-ul">
+                                <ul>
+                                    <li><a href="https://www.calee.in/career">Career</a></li>
+                                    <li><a href="https://www.calee.in/faq">Faq</a></li>
+                                    <li><a href="https://www.calee.in/blog">Blog</a></li>
+                                    <li><a href="https://www.calee.in/gallery">Gallery</a></li>
+                                    <li><a href="https://www.calee.in/privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="https://www.calee.in/contact">Contact</a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="background:#E7E9E7;">
+                <p style="text-align:center;margin-top:5px;color:#000;">Design & Developed By 
+                    <a href="/derma.html"style="color:#000;font-weight:600;" target="_blank">Dermaclin</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-12 col-sm-12 col-lg-12 contact-us-form" style="text-align: center;">
+                        <a type="button" class="close" data-dismiss="modal">&times;</a>
+                        <div class="contact-us-heading">
+                            <h3>BOOK YOUR APPOINTMENT TODAY</h3>
+                        </div>
+                        <form method="post" id="enquiry_form1">
+                            <div class="control-group contact-form">
+                                <div class="controls form-inline">
+                                    <input type="text" placeholder="NAME" class="input-small" name="name"
+                                        id="txt_name1">
+                                    <input type="text" placeholder="ENTER EMAIL ADDRESS" class="input-small"
+                                        name="email" id="txt_email1">
+                                    <input type="text" placeholder="ENTER MOBILE NUMBER" class="input-small"
+                                        name="number" id="txt_number1" onkeypress="return isNumberKey(event)">
+                                    <input type="text" placeholder="CITY" class="input-small" name="city"
+                                        id="txt_city1">
+                                    <input type="text" placeholder="ENTER YOUR SERVICE " class="input-small"
+                                        name="service" id="txt_service1">
+                                </div>
+                                <label id="reg_error21"
+                                    style="font-family: 'MyriadPro-Cond';padding-top:10px;display:none; color:white; font-size:14px; "></label>
+                            </div>
+                            <a href="javascript:void(0);" class="submit" id="submit_enquiry_form1"
+                                style="position: relative;top:8px;">SUBMIT</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript">
+        var blshm = 'https://www.calee.in/';
+    </script>
+
+    <script type="text/javascript" src="https://www.calee.in/assets/frontend/js/test.js"></script>
+
+    <script type="text/javascript" src="https://www.calee.in/assets/frontend/js/main.js"></script>
+    <script src="https://www.calee.in/assets/frontend/js/bootstrap.min.js"></script>
+</body>
+
+</html>

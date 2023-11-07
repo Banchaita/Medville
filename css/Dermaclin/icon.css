@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'calee';
+    src:  url('fonts/calee.eot?yl5cs6');
+    src:  url('fonts/calee.eot?yl5cs6#iefix') format('embedded-opentype'),
+      url('fonts/calee.ttf?yl5cs6') format('truetype'),
+      url('fonts/calee.woff?yl5cs6') format('woff'),
+      url('fonts/calee.svg?yl5cs6#calee') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'calee' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-new-product:before {
+    content: "\e91b";
+  }
+  .icon-hash:before {
+    content: "\e91a";
+  }
+  .icon-hash-key:before {
+    content: "\e919";
+  }
+  .icon-CALEE-PLUS-svg:before {
+    content: "\e918";
+  }
+  .icon-Safety:before {
+    content: "\e912";
+  }
+  .icon-assured-results:before {
+    content: "\e913";
+  }
+  .icon-complete-satisfaction:before {
+    content: "\e914";
+  }
+  .icon-cost-effective:before {
+    content: "\e915";
+  }
+  .icon-international-standard:before {
+    content: "\e916";
+  }
+  .icon-quick-results:before {
+    content: "\e917";
+  }
+  .icon-back:before {
+    content: "\e900";
+  }
+  .icon-next:before {
+    content: "\e901";
+  }
+  .icon-bold-back:before {
+    content: "\e902";
+  }
+  .icon-right-arrow-light:before {
+    content: "\e903";
+  }
+  .icon-right-arrow-medium:before {
+    content: "\e904";
+  }
+  .icon-left-arrow-bold:before {
+    content: "\e905";
+  }
+  .icon-pie:before {
+    content: "\e906";
+  }
+  .icon-play-button:before {
+    content: "\e907";
+  }
+  .icon-email:before {
+    content: "\e908";
+  }
+  .icon-phone:before {
+    content: "\e909";
+  }
+  .icon-facebook:before {
+    content: "\e90a";
+  }
+  .icon-pinterest:before {
+    content: "\e90b";
+  }
+  .icon-twitter:before {
+    content: "\e90c";
+  }
+  .icon-instagram:before {
+    content: "\e90d";
+  }
+  .icon-copyright:before {
+    content: "\e90e";
+  }
+  .icon-map-pin-marked:before {
+    content: "\e90f";
+  }
+  .icon-pin:before {
+    content: "\e910";
+  }
+  .icon-home:before {
+    content: "\e911";
+  }
+  
