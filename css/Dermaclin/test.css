@@ -761,7 +761,7 @@ body.cos-open header {
     -ms-flex-align: center;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .cosmetic-experts .g-row>.g-flex-col .content-cont {

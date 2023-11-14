@@ -802,6 +802,11 @@ img {
     bottom: 0;
     right: 0
 }
+ul.g-ul.top-social.ul-typ-n {
+    margin-top: -21px;
+    margin-left: 80%;
+}
+
 
 .g-row {
     display: -ms-flexbox;
@@ -895,7 +900,7 @@ img {
     padding: 10px 18px;
     background-color: var(--black);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.41);
-    color: #fff
+    color: var(--white)
 }
 
 .g-anchor-btn {
@@ -1028,7 +1033,7 @@ img {
     position: absolute;
     height: 16px;
     width: 16px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-color: none;
     border-radius: 50%;
     left: 50%;
@@ -1071,7 +1076,7 @@ img {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #fff
+    background-color: var(--white)
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active.pagnsn-t-2 {
@@ -1159,7 +1164,7 @@ img {
     }
 
     .swiper-pagination.pagination-t-2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: #fff !important
+        background-color: var(--white) !important
     }
 
     .swiper-pagination.pagination-t-2 .swiper-pagination-bullet::after {
@@ -1189,7 +1194,7 @@ img {
 }
 
 .an-btn-2:hover {
-    background-color: #fff;
+    background-color: var(--white);
     color: var(--black);
     box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.41);
     transform: translateY(-3px)
@@ -1208,7 +1213,7 @@ header {
 
 header .top-header {
     background-color: var(--black);
-    color: #fff;
+    color: var(--white);
     height: 100px
 }
 
@@ -1232,7 +1237,7 @@ header .top-header .g-row .g-flex-col:nth-child(3) i {
 
 header .top-header li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     letter-spacing: 1.2px;
     font-size: 14px
@@ -1260,13 +1265,21 @@ header .site-logo img {
     height: 100%;
     width: auto
 }
+footer .site-logo img {
+    height: 100%;
+    width: auto
+}
+footer .site-logo {
+    height: 60px;
+    display: block
+}
 
 header li {
     display: inline-block
 }
 
 header .g-navbar {
-    background-color: #fff;
+    background-color: var(--white);
     text-align: center;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16)
 }
@@ -1308,7 +1321,7 @@ header .g-navbar ul ul li:hover {
 }
 
 header .g-navbar ul ul li:hover a {
-    color: #fff
+    color: var(--white)
 }
 
 header .g-navbar ul li:hover ul {
@@ -1321,6 +1334,7 @@ header .g-navbar ul li:hover ul {
 
 .banner img {
     width: 100%;
+    /* height: 70vh; */
     z-index: 0
 }
 
@@ -1411,7 +1425,7 @@ header .g-navbar ul li:hover ul {
         line-height: 41px;
         text-align: left;
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-        color: #fff
+        color: var(--white)
     }
 }
 
@@ -1420,7 +1434,7 @@ header .g-navbar ul li:hover ul {
         font-size: 15px;
         letter-spacing: .20px;
         line-height: 17px;
-        color: #fff;
+        color: var(--white);
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         text-align: left
     }
@@ -1556,7 +1570,7 @@ header .g-navbar ul li:hover ul {
 .review .review-section .rev-text {
     margin-left: 75px;
     position: relative;
-    background-color: #fff;
+    background-color: var(--white);
     filter: drop-shadow(0 3px 20px rgba(0, 0, 0, 0.16))
 }
 
@@ -1568,7 +1582,7 @@ header .g-navbar ul li:hover ul {
     width: 0;
     height: 0;
     border: 40px solid transparent;
-    border-top-color: #fff;
+    border-top-color: var(--white);
     border-bottom: 0;
     border-left: 0;
     margin-bottom: -40px
@@ -1800,11 +1814,11 @@ header .g-navbar ul li:hover ul {
 }
 
 .about-home .g-heading {
-    color: #000
+    color: var(--white)
 }
 
 .about-home .hd-line {
-    background-color: #fff
+    background-color: var(--white)
 }
 
 .about-home .g-row {
@@ -1813,7 +1827,7 @@ header .g-navbar ul li:hover ul {
 }
 
 .about-home .desc p {
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
@@ -1938,7 +1952,7 @@ header .g-navbar ul li:hover ul {
 }
 
 .home-blogs .g-img-txt-card {
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.16);
     margin: 20px
 }
@@ -2012,7 +2026,7 @@ header .g-navbar ul li:hover ul {
 }
 
 .al-footer .sort-abot {
-    color: #fff;
+    color: var(--white);
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -2020,7 +2034,7 @@ header .g-navbar ul li:hover ul {
 }
 
 .al-footer .foot-head {
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
@@ -2030,7 +2044,7 @@ header .g-navbar ul li:hover ul {
 }
 
 .al-footer ul li a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
@@ -2074,7 +2088,7 @@ header .g-navbar ul li:hover ul {
 }
 
 .al-footer .subscribe button {
-    background-color: #fff;
+    background-color: var(--white);
     color: var(--black);
     font-weight: 500 !important
 }
@@ -2151,7 +2165,7 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
     min-width: 364px;
     max-width: 364px;
     min-height: 468px;
-    background-color: #fff;
+    background-color: var(--white);
     float: right;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
     position: relative;
@@ -2163,7 +2177,7 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #fff;
+    background-color: var(--white);
     right: -20px;
     top: -20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -2273,7 +2287,7 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
 
     body.nav-n-opn .navbar {
         max-height: 100%;
-        background-color: #fff !important
+        background-color: var(--white) !important
     }
 
     .navbar .allover {
@@ -2310,7 +2324,7 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
     }
 
     .navbar-submenu-list {
-        background-color: #fff
+        background-color: var(--white)
     }
 
     .navbar-nav li:nth-child(3) .navbar-submenu {
@@ -2322,14 +2336,14 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
         width: 50px;
         position: absolute;
         top: 0;
-        background-color: #000;
+        background-color: var(--black);
         margin-left: -16px
     }
 
     .nav-btn .nav-line {
         height: 1px;
         width: 17px;
-        background-color: #fff;
+        background-color: var(--white);
         margin-left: 16.5px;
         margin-top: 24.5px;
         position: relative
@@ -2341,7 +2355,7 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
         position: absolute;
         height: 1px;
         width: 17px;
-        background-color: #fff;
+        background-color: var(--white);
         margin-left: 0
     }
 
@@ -2352,4 +2366,67 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
     .nav-btn .nav-line::before {
         margin-top: -6px
     }
+}
+
+
+.parent {
+    width: 1000px;
+    margin: auto;
+  }
+  .testimonials {
+    color: #000;
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+    height: 400px;
+  }
+  .testimonials h2 {
+    padding: 10px 0;
+    font-size: 28px;
+    position: absolute;
+    margin-left: 30%;
+  }
+  .testimonials .testimonials-boxes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 45px;
+  }
+  .testimonials .testimonials-boxes .box {
+    width: 25%;
+    height: 50%;
+    position: relative;
+    justify-content: space-between;
+    margin: 3%;
+    padding: 2px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    border-radius: 15px 15px 0 15px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .testimonials .testimonials-boxes .box p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .testimonials .testimonials-boxes .box span {
+    font-size: 20px;
+  }
+  .testimonials .testimonials-boxes .box img {
+    width: 25%;
+    height: 45%;
+    right: -35px;
+    top: 142px;
+    border: 1px solid #fff;
+    border-radius: 0 25% 25% 25%;
+    position: absolute;
+  }
+
+
+.about-title {
+    position: absolute;
+    top: 13rem;
+    left: 37rem;
 }
