@@ -146,6 +146,7 @@ ul.g-ul.top-social.ul-typ-n.footer-media {
     margin-left: 39%;
     display: flex;
 }
+
 /* .foot-div{
 	padding:40px 70px
 } */
@@ -1153,7 +1154,7 @@ input::-moz-focus-inner{
 		display:inline-block;
 		position:relative;
 		background-color:#5C5D5D;
-		float:right
+		float:right;
 	}
 	.concern-image img{
 		max-width:100%;
@@ -1233,3 +1234,36 @@ input::-moz-focus-inner{
 	margin:0 auto;
 	padding:0;
 }
+.foot-div{
+	width:52rem;
+}
+
+@media only screen and (max-width:1050px){
+    .foot-div{
+		width: 35rem !important;
+	} 
+	.footer-logo{
+		margin-top: 20% !important;
+		margin-left: -14%;
+		width:850px !important;
+	} 
+	.footer-media{
+		margin-left: 14% !important;
+	} 
+	.client-exp{
+		font-size: 16px !important;
+		font-weight: bold !important;
+	}
+	.about-home .about-calee {
+		height: 100% !important;
+	} 
+	.about-home .float-about {
+		top: 55rem !important;
+		width: 100% !important;
+	}
+	video{
+		height: 70vh !important;
+		object-fit: fill !important;
+	}
+}
+
