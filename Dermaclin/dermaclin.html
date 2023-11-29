@@ -239,11 +239,27 @@
             <div class="g-container">
                 <div class="g-row">
                     <div class="g-flex-col">
-                        <div class="g-flex-col">
+                        <!-- <div class="g-flex-col">
                             <a href="/Dermaclin/dermaclin.html" class="site-logo">
                                 <img src="/assests/images/SKIN AND CARE.png" alt="derma Logo" class ="logo"/>
                             </a>
+                        </div> -->
+                        <div class="g-flex-col">
+                            <a href="/Dermaclin/dermaclin.html" class="site-logo">
+                                <img src="/assests/images/SKIN AND CARE.png" alt="derma Logo" class="logo" style="animation: fadeIn 2s cubic-bezier(0.42, 0, 0.84, 0.24);">
+                            </a>
                         </div>
+                        
+                        <style>
+                            @keyframes fadeIn {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+                        </style>
                     </div>
                     <div class="g-flex-col contact-div">
                         <ul class="g-ul top-contact ul-typ-n">
@@ -784,31 +800,67 @@
         <div id="banner_home" class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="banner-box">
+                    <!-- <div class="banner-box">
                         <div class="g-img-box-front bok-a-apt">
                             <a href="/Dermaclin/dermaclin.html">
                                 <img src="/assests/images/beautician-applying-special-white-cream-patient.jpg"alt="calee services" class="g-fl-rt desktop-image">
-                                <!-- <img src="/assests/images/SKIN AND CARE.png"alt="calee services" class="g-fl-rt desktop-image"> -->
                             </a>
                         </div>
+                    </div> -->
+                    <div class="banner-box">
+                        <div class="g-img-box-front bok-a-apt" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+                            <a href="/Dermaclin/dermaclin.html" style="display: block; position: relative; overflow: hidden; width: 100%; height: 100%;">
+                                <img src="/assests/images/beautician-applying-special-white-cream-patient.jpg" alt="calee services" class="g-fl-rt desktop-image" style="width: 100%; height: 100%; object-fit: cover; animation: zoomIn 10s ease-in-out infinite;">
+                            </a>
+                        </div>
+                    </div>
+                    <style>
+                        @keyframes zoomIn {
+                            0% {
+                                transform: scale(1);
+                            }
+                            100% {
+                                transform: scale(1.5);
+                            }
+                        }
+                    </style>
+                </div>    
+                <div class="swiper-slide">
+                    <div class="banner-box">
+                        <div class="g-img-box-front bok-a-apt" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+                            <a href="/Dermaclin/dermaclin.html" style="display: block; position: relative; overflow: hidden; width: 100%; height: 100%;">
+                                <img src="/assests/images/woman-cosmetology-studio-laser-hair-removal.jpg" alt="calee services" class="g-fl-rt desktop-image" style="width: 100%; height: 100%; object-fit: cover; animation: zoomIn 10s ease-in-out infinite;">
+                            </a>
+                        </div>
+                        <style>
+                            @keyframes zoomIn {
+                                0% {
+                                    transform: scale(1);
+                                }
+                                100% {
+                                    transform: scale(1.5);
+                                }
+                            }
+                        </style>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="banner-box">
-                        <div class="g-img-box-front bok-a-apt">
-                            <a href="/Dermaclin/dermaclin.html">
-                                <img src="/assests/images/woman-cosmetology-studio-laser-hair-removal.jpg" alt="calee services"class="g-fl-rt desktop-image">
+                        <div class="g-img-box-front bok-a-apt" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+                            <a href="/Dermaclin/dermaclin.html" style="display: block; position: relative; overflow: hidden; width: 100%; height: 100%;">
+                                <img src="/assests/images/young-woman-having-facial-treatment.jpg" alt="calee services" class="g-fl-rt desktop-image" style="width: 100%; height: 100%; object-fit: cover; animation: zoomIn 10s ease-in-out infinite;">
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="banner-box">
-                        <div class="g-img-box-front bok-a-apt">
-                            <a href="/Dermaclin/dermaclin.html">
-                                <img src="/assests/images/young-woman-having-facial-treatment.jpg" alt="calee services"class="g-fl-rt desktop-image">
-                            </a>
-                        </div>
+                        <style>
+                            @keyframes zoomIn {
+                                0% {
+                                    transform: scale(1);
+                                }
+                                100% {
+                                    transform: scale(1.5);
+                                }
+                            }
+                        </style>
                     </div>
                 </div>
             </div>
@@ -900,7 +952,7 @@
             </div>
             <div class="about">
                 <h3 class="sub-heading" style="text-align:center">Welcome  to Dermaclin</h3>
-                <p class="desc" style="text-align: justify;width: 50%; margin: auto; margin-top: 30px;">
+                <p class="desc" style="text-align: justify;width: 50%; margin: auto; margin-top: 30px; font-size:16px;font-weight:400">
                     Welcome Dermaclin what separates us from others is the time & effort we put in to understand your need.
                     As a beacon of excellence in the region, we take pride in our commitment to your well-being through a unique blend 
                     of expertise, holistic care, cutting-edge technology, and an international team of esteemed professionals.
@@ -927,6 +979,19 @@
     <!-- End  of about -->
 
     <!--Start of service -->
+
+    <!-- <style>
+        .sgl-cont {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .sgl-cont.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style> -->
     <section class="home-services g-sec-pad">
         <div class="g-container">
             <div class="g-row">
@@ -964,6 +1029,11 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                
+
+
+
                                 <div class="sgl-cont">
                                     <div class="g-row g-flx-algn-cen">
                                         <div class="g-flex-col">
@@ -1968,7 +2038,7 @@
                 </style>
                 <div class="g-flex-col g-flex-col-mob exp-right-column">
                     <div class="doc-img-cont">
-                        <img src="/assests/images/dr.shivani.jpg" alt class="experts">
+                        <img src="/assests/images/dr.shivani3.jpg" alt>
                     </div>
                     <div class="content-cont">
                         <div class="section-heading">
@@ -2270,6 +2340,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Add a scroll event listener to handle the animation
+        window.addEventListener('scroll', function() {
+            var element = document.querySelector('.sgl-cont');
+            var position = element.getBoundingClientRect().top;
+
+            // If the element is in the viewport, add the 'show' class
+            if (position < window.innerHeight) {
+                element.classList.add('show');
+            }
+        });
+    </script>
 
 
     
