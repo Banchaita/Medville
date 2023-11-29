@@ -1045,7 +1045,7 @@ ul.g-ul.top-social.ul-typ-n {
     width: auto;
     height: auto;
     color: var(--inactive_black);
-    font-size: 13px;
+    font-size: 22px;
     transition: all .2s ease-in-out;
     line-height: 24px;
     position: relative;
@@ -1082,7 +1082,7 @@ ul.g-ul.top-social.ul-typ-n {
 .swiper-pagination-bullet.swiper-pagination-bullet-active.pagnsn-t-2 {
     font-weight: 500;
     color: var(--black);
-    font-size: 13px;
+    font-size: 22px;
     transition: all .2s ease-in-out
 }
 
@@ -2433,8 +2433,24 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
 
 .about-title {
     position: absolute;
-    top: 13rem;
-    left: 37rem;
+    top: 27rem;
+    left: 16rem;
+    color: #fff;
+}
+.about-title h1 {
+    font-size: 7rem;
+    animation: fadeInUp 1.5s ease-in-out; /* You can adjust the animation duration and timing function */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .experts{
     border-radius: 50rem;
@@ -2509,6 +2525,13 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
         height: 100px;
         /* height: 22vh; */
     }
+    ul.g-ul.top-social.ul-typ-n {
+        margin-top: -27px;
+        margin-left: -20px;
+        display: none;
+    }
+
+
     /* header .top-header .g-row .g-flex-col:nth-child(2) {
         text-align: end;
         margin-top: 5rem;
@@ -2528,5 +2551,41 @@ body.scrolled.ser-view #home_ser_sld .pagnsn-t-2-cont .swiper-pagination-bullet-
         width: 25px;
     } */
     
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 6%;
+    float: left;
+    border-radius: 20px;
+    margin-left: -18px;
+    margin-top: -5px;
+}
+.testimonial-item.equal-height.style-6 {
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 10px;
+}
+.cell-right {
+    text-align: center;
+    margin-right: 80px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.testimonial-name {
+    font-weight: 600;
+}
+.testimonial-content.quote {
+    padding: 17px 55px;
+}
+.et_right_sidebar #main-content .container:before{
+    display: none;
+}
+#main-content .container {
+    padding-top: 10px;
+}
+i.fa.fa-quote-left {
+    padding: 0px 10px;
+    color: #999;
 }
 
