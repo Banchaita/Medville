@@ -413,6 +413,7 @@ body.cos-open header {
 .doc-img-cont img {
     -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    border-radius: 50rem;
 }
 
 .doc-img-cont p {
