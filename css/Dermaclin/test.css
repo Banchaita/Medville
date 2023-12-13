@@ -1044,10 +1044,10 @@ body.cos-open header {
         text-align: justify;
     }
 
-    .cosmetic-experts .ex-desc p.edu,
+    /* .cosmetic-experts .ex-desc p.edu,
     .cosmetic-experts .ex-desc p.expertise {
         text-align: center;
-    }
+    } */
 
     .cosmetic-experts a {
         font-size: 14px;

@@ -1,0 +1,7 @@
+$(document).ready(function () { navShadow(); $('.pagnsn-t-2').click(function () { var liIndex = $(this).index(), newHeight = $('#home_ser_sld .swiper-slide').eq(liIndex).find('.slide-panel').outerHeight(); console.log($('#home_ser_sld .swiper-slide').eq(liIndex).find('.slide-panel').outerHeight()); $('#home_ser_sld').css({ 'height': newHeight + 50 }); }); $('.bok-a-apt').click(function () { $('.book-appt').addClass('opened'); }); $('#close_btn_book').click(function () { $('.book-appt').removeClass('opened'); }); $('header .nav-btn').click(function () { if ($('body.nav-n-opn').length == 0) { $("body").addClass('nav-n-opn'); } else { $("body").removeClass('nav-n-opn'); } }); }); function navShadow() {
+    'use strict'; var iScrollPos = 0; $(window).scroll(function () {
+        var iCurScrollPos = $(this).scrollTop(), serPan = $('#home_ser_sld').position().top, abtPan = $('.about-home').position().top; if (iCurScrollPos > iScrollPos) { $('body').addClass('scrolled'); } else { $('body').removeClass('scrolled'); }
+        if (iCurScrollPos >= serPan && iCurScrollPos < abtPan) { $('body').addClass('ser-view'); } else { $('body').removeClass('ser-view'); }
+        iScrollPos = iCurScrollPos;
+    });
+}
