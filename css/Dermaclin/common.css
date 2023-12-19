@@ -177,7 +177,16 @@ li.cos-sur-dwn a:hover {
     margin-top: -15% !important;
     width: 50% !important;
     margin-left: 25% !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0;
+    margin-bottom: 23px;
+    text-align: justify;
+    text-align: justify !important;
+    letter-spacing: 1px;
 }
+
 
 .home-services.g-sec-pad{
     margin-top: 6rem;
