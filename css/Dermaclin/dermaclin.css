@@ -292,7 +292,7 @@ ul.g-ul.top-social.ul-typ-n.footer-media {
 }
 .services a:active,a:focus,a:hover,a:link{
 	text-decoration:none;
-	color:#fff
+	color:#000
 }
 .submit{
 	height:40px;
